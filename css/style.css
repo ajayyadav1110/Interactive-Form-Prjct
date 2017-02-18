@@ -1,0 +1,243 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+input,
+button {
+ font-family: 'Roboto', sans-serif;
+}
+
+body {
+  color: #184f68;
+  background: #accbd9;
+}
+
+header {
+	text-align: center;  
+}
+
+h1 {
+	font-size: 3em;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.45);
+	margin: 0;
+}
+
+p {
+    line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* =================================
+  Form Element Styles
+==================================== */
+
+form {
+	padding: .875em 1.875em 1.875em;
+	background: #85b5ca;
+}
+
+fieldset,
+legend,
+button {
+	padding: 0;
+	border: none;
+}
+
+fieldset {
+	margin-top: 1.5em;
+}
+
+legend,
+button {
+	font-size: 1.25em;	
+}
+
+legend {
+	font-weight: 500;
+	border-top: 2px solid #679cb3;
+	padding-bottom: 0.5em;
+	padding-top: 0.5em;
+}
+
+input[type="text"],
+input[type="email"],
+legend {
+	width: 100%;
+}
+
+label {
+	color: #000;
+	display: block;
+}
+
+.job-roles {
+	line-height: 0;
+}
+
+.job-roles > label {
+	display: inline-block;
+}
+.job-roles div:last-child {
+	margin-bottom: 20px;
+}
+
+input, select {
+	font-size: 1em;
+	font-weight: 500;
+	padding: .8em;
+	background: #c1deeb;
+	border: 2px solid #c1deeb;
+	outline: none;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+input:focus, select:focus:focus {
+	background: #fff;
+	border-color: #5e97b0;
+	transition: border-color .4s, background-color .4s;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+	display: inline-block;
+}
+
+input[type="radio"]:focus,
+input[type="checkbox"]:focus {
+	outline:none;
+	box-shadow: 0 0 3px 3px rgba(31, 33, 33, 0.4)
+}
+
+input[type="checkbox"]:disabled {
+	color: grey;
+}
+
+.unavailable-activity {
+	color: grey;
+}
+
+.unavailable-activity::after {
+	content: "This is unavailable";
+	color: white;
+	margin-left: 10px;
+}
+
+button {
+	color: #fff;
+	padding: .55em 1.25em;
+	background: #22627e;
+	margin: 1.25em 0 .5em;
+	cursor: pointer;
+}
+
+button:hover, button:focus {
+	background: #184c62;
+}
+
+a {
+	color: white;
+}
+
+.register-for {
+	font-size: 1.5em;
+}
+
+.total {
+	margin-top: 20px;
+}
+
+.error {
+	font-weight: bold;
+	color: #9a2828;
+	margin-bottom: 10px;
+}
+
+.required-input {
+	border: 2px solid red;
+}
+
+#error-summary {
+	font-weight: bold;
+	color: #9a2828;
+}
+
+#demo-message {
+	font-size: 10px;
+	color: #9a2828;
+}
+
+/* ================================= 
+  Page Styles
+==================================== */
+
+.container {
+	margin: auto;
+	max-width: 680px;
+}
+
+.shirt div {
+	float: left;
+	margin-right: .85em;
+}
+
+.interests input {
+	margin-bottom: 0;
+}
+
+.credit-card {
+	margin-top: 1.25em;
+}
+
+/* =================================
+  Helper Classes
+==================================== */
+
+.is-hidden {
+	display: none;
+}
+
+.clearfix::after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 0) and (max-width: 679px) {
+	header {
+		padding: 2em 0;
+	}
+	button {
+		width: 100%;
+	}
+}
+
+@media (min-width: 680px) {
+	header {
+		padding: 4.65em 0 2.5em;
+	}
+	.col {
+		float: left;
+	}
+	.col + .col {
+		margin-left: 2.5%;
+	}
+	.col-3 {
+		width: 23%;
+	}
+	.col-6 {
+		width: 49%;
+	}
+}
