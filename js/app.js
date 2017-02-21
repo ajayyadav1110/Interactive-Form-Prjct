@@ -53,7 +53,7 @@ If the user selects "Theme - JS Puns" then the color menu should only display "C
 If the user selects "Theme - I ♥ JS" then the color menu should only display "Tomato," "Steel Blue," and "Dim Grey."*/
 $("#color").addClass("is-hidden");
 var $option1=$('<option value="cornflowerblue">Cornflower Blue (JS Puns shirt only)</option>')
-$("#design").on("click" ,function(){
+$("#design").on("change" ,function(){
 var designSelection = $("#design").val();
 $('#color').removeClass('is-hidden');
     if (designSelection === "js puns")  {
