@@ -71,6 +71,9 @@ $('#color').removeClass('is-hidden');
         .append('<option value="steelblue">Steel Blue (I &#9829; JS shirt only)</option>')
         .append('<option value="dimgrey">Dim Grey (I &#9829; JS shirt only)')
       ;
+    }
+else if(designSelection === "selecttheme") {
+      $('#color').addClass("is-hidden");
     }	
   });
 
